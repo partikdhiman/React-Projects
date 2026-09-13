@@ -1,0 +1,131 @@
+.InfoBox {
+    text-align: center;
+    width: 100%;
+}
+
+.cardContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.weather-card {
+    width: 100%;
+    max-width: 340px;
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 28px 24px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.weather-card__image {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.weather-card__city {
+    font-size: 20px;
+    font-weight: 600;
+    color: #111827;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 0;
+}
+
+.weather-card__condition {
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #6b7280;
+    margin: 4px 0 20px;
+}
+
+.weather-card__readout {
+    font-size: 42px;
+    font-weight: 700;
+    color: #111827;
+    margin: 4px 0;
+}
+
+.weather-card__readout sup {
+    font-size: 18px;
+    font-weight: 500;
+    color: #6b7280;
+}
+
+.weather-card__feels {
+    font-size: 13px;
+    color: #6b7280;
+    margin: 0 0 20px;
+}
+
+.weather-card__stats {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.weather-card__stat {
+    background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 8px 14px;
+    min-width: 74px;
+}
+
+.weather-card__stat-label {
+    font-size: 10px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #9ca3af;
+    margin: 0 0 4px;
+}
+
+.weather-card__stat-value {
+    font-size: 14px;
+    font-weight: 600;
+    color: #111827;
+    margin: 0;
+}
+
+.weather-card__icon {
+    font-size: 22px !important;
+}
+
+.icon--hot { color: #f97316; }
+.icon--cold { color: #2563eb; }
+.icon--rain { color: #6b7280; }
+
+/* Dark mode */
+.dark .weather-card {
+    background-color: #1f2937;
+    border-color: #374151;
+}
+
+.dark .weather-card__city,
+.dark .weather-card__readout {
+    color: #f9fafb;
+}
+
+.dark .weather-card__condition,
+.dark .weather-card__feels {
+    color: #9ca3af;
+}
+
+.dark .weather-card__stat {
+    background-color: #111827;
+    border-color: #374151;
+}
+
+.dark .weather-card__stat-value {
+    color: #f9fafb;
+}
+
+.dark .weather-card__stat-label {
+    color: #6b7280;
+}

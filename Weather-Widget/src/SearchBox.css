@@ -1,0 +1,60 @@
+.SearchBox {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.SearchBox form {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.SearchBox .search-input .MuiOutlinedInput-root {
+    border-radius: 6px;
+}
+
+.SearchBox .search-button {
+    border-radius: 6px !important;
+    text-transform: none !important;
+    font-weight: 600 !important;
+    box-shadow: none !important;
+}
+
+.SearchBox .error-text {
+    font-size: 13px;
+    color: #dc2626;
+    margin: 10px 0 0;
+    animation: fadeIn 0.2s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Dark mode */
+.dark .SearchBox form {
+    background-color: #1f2937;
+    border-color: #374151;
+}
+
+.dark .SearchBox .search-input .MuiOutlinedInput-input {
+    color: #f9fafb;
+}
+
+.dark .SearchBox .search-input .MuiInputLabel-root {
+    color: #9ca3af;
+}
+
+.dark .SearchBox .search-input .MuiOutlinedInput-notchedOutline {
+    border-color: #374151;
+}
+
+.dark .SearchBox .search-input .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+    border-color: #4b5563;
+}
