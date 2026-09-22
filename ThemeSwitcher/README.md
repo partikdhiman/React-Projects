@@ -39,7 +39,7 @@ src/
 │   └── ThemeBtn.jsx
 │
 ├── contexts/
-│   └── Theme.jsx
+│   └── Theme.js
 │
 ├── App.jsx
 ├── App.css
