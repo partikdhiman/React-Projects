@@ -1,6 +1,6 @@
 import useTheme from "../contexts/Theme";
 
-export default function ThemeBtn() {
+export default function ThemeButton() {
 
     const { themeMode, lightTheme, darkTheme } = useTheme();
 
@@ -26,7 +26,7 @@ export default function ThemeBtn() {
 
             <div className="
                 w-11 h-6
-                bg-gray-200
+                bg-gray-300
                 rounded-full
                 peer
                 dark:bg-gray-700
@@ -43,10 +43,11 @@ export default function ThemeBtn() {
                 after:w-5
                 after:transition-all
                 peer-checked:after:translate-x-full
+                peer-checked:after:border-white
             " />
 
-            <span className="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">
-                Toggle Theme
+            <span className="ml-3 text-sm font-medium text-gray-700 dark:text-gray-300">
+                {themeMode === "dark" ? "Dark Mode" : "Light Mode"}
             </span>
 
         </label>
